@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "APSyntaxCreateObject.h"
 #import "APSyntaxis.h"
 
 
