@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-// использование полей {} избегать, приведены в качестве примера
+@class APSyntaxCreateObject;
+@protocol APSyntaxCreateObject;
+
+
+// использование полей {} необходимо избегать, приведены в качестве примера
 // по дефолту, поля - @protected
 
-@interface APSyntaxCreateObject : NSObject {
+@interface APSyntaxCreateObject : NSObject <NSObject>{
     @public
     NSObject *_object;
     
@@ -22,15 +26,49 @@
     NSObject *_protectedObject;
 }
 
--(void)sayHi;
--(id)text; // (NSString *)text;
+// @property способ создать и геттер и сеттер (в зависимости от передаваемых параметров)
+@property (nonatomic, retain)   NSObject    *object;
+// это равносильно
+- (void)setObject:(NSObject *)object;
+- (NSObject *)object;
+
+@property (atomic, copy)    NSObject    *atomicCopyObject;
+@property (nonatomic, assign, readonly) NSUInteger integerValue;
+@property (nonatomic, assign, readwrite, getter=isReady, setter=setIsReady:)  BOOL    ready;
+
+// + методы самого класса
++ (instancetype)syntax;
+
+// - методы объекта класса
+- (void)sayHi;
+- (id)text; // (NSString *)text;
 
 // метод с одним параметром
 // sayWithString - селектор, (NSString *) - тип принимаемого параметра, string - имя параметра
--(void)sayWithString:(NSString *)string;
+- (void)sayWithString:(NSString *)string;
 
 // метод с двумя параметрами
 // name - продолжение селектора
--(void)sayWithString:(NSString *)string name:(NSString *)name;
+- (void)sayWithString:(NSString *)string name:(NSString *)name;
 
 @end
+
+// Category интерфейс над APSyntaxCreateObject
+// расширение нашего класса новым методом
+@interface APSyntaxCreateObject (APCategory)
+
+- (void)sayHiFromCategory;
+
+@end
+
+@protocol APSyntaxCreateObject <NSObject>
+- (void)sayHiFromProtocol;
+
+@required
+- (void)requiredSayHiProtocol;
+
+@optional
+- (void)optionalSayHiFromProtocol;
+
+@end
+
