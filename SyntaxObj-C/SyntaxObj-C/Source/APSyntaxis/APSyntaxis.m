@@ -26,6 +26,9 @@ void APObjectCLiterals();
 static
 void APObjectCTollFreeBridging();
 
+static
+void APObjectCMessaging();
+
 #pragma mark -
 #pragma mark Public Implementations
 
@@ -35,6 +38,7 @@ void APObjectCSyntax() {
     APObjectCNil();
     APObjectCLiterals();
     APObjectCTollFreeBridging();
+    APObjectCMessaging();
 }
 
 #pragma mark -
@@ -98,7 +102,7 @@ void APObjectCLiterals() {
 // Мост (тоннель) между С и Objective C
 
 void APObjectCTollFreeBridging() {
-    CFStringRef stringRef = (CFStringRef)[NSString stringWithFormat:@"%@", [NSString class]];
+    CFStringRef stringRef = (CFStringRef)[[NSString alloc] initWithFormat:@"%d", arc4random()];
     NSString *string = (NSString *)stringRef;
     [string retain];
     
@@ -110,4 +114,25 @@ void APObjectCTollFreeBridging() {
     NSLog(@"string retain count = %lu", (unsigned long)[string retainCount]);
     
     [string release];
+}
+
+// Messaging
+
+void APObjectCMessaging() {
+    // 1 variant
+    id object = [[NSObject new] autorelease];
+    
+    // 2 variant
+    object = [NSMutableArray arrayWithObjects:object, [[NSObject new] autorelease], nil];
+    
+    // 3 variant
+    object = [NSMutableDictionary dictionary];
+    [object setObject:[[NSObject new] autorelease]
+               forKey:[[[NSString alloc] initWithFormat:@"%d", arc4random()] autorelease]];
+    
+    // 4 variant
+    SEL selector = @selector(setObject:forKey:);
+    [object performSelector:selector
+                 withObject:[[NSObject new] autorelease]
+                 withObject:[[[NSString alloc] initWithFormat:@"%d", arc4random()] autorelease]];
 }
