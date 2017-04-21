@@ -8,5 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-void APObjSyntax(void);
+void APObjectCSyntax(void);
 

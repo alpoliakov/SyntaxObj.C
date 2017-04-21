@@ -11,9 +11,9 @@
 
 
 int main(int argc, const char * argv[]) {
-    //APObjSyntax();
     @autoreleasepool {
-        
+        APObjectCSyntax();
     }
+    
     return 0;
 }
