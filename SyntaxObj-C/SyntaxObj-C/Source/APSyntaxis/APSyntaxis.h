@@ -1,5 +1,5 @@
 //
-//  main.m
+//  APSyntaxis.h
 //  SyntaxObj-C
 //
 //  Created by Aleksandr Poliakov on 21.04.17.
@@ -7,13 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "APSyntaxis.h"
 
+void APObjSyntax(void);
 
-int main(int argc, const char * argv[]) {
-    //APObjSyntax();
-    @autoreleasepool {
-        
-    }
-    return 0;
-}
