@@ -1,5 +1,5 @@
 //
-//  Syntax.h
+//  APSyntaxis.h
 //  SyntaxObj-C
 //
 //  Created by Aleksandr Poliakov on 21.04.17.
@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "APSyntaxCreateObject.h"
 
-@interface Syntax : NSObject
+void APObjectCSyntax(void);
 
-@end
