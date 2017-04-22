@@ -1,13 +1,13 @@
 //
-//  APSyntaxis.h
+//  APsyntaxProtocol.h
 //  SyntaxObj-C
 //
-//  Created by Aleksandr Poliakov on 21.04.17.
+//  Created by Aleksandr Poliakov on 22.04.17.
 //  Copyright © 2017 Aleksandr Poliakov. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "APSyntaxCreateObject.h"
 
-void APObjectCSyntax(void);
+@protocol APsyntaxProtocol <NSObject>
 
+@end

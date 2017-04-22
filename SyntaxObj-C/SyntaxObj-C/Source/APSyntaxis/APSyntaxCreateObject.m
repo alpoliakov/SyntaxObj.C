@@ -18,7 +18,7 @@
 
 // - методы объекта класса
 - (void)sayHi {
-    NSLog(@"Hi from %@", self);
+    [self sayWithString:@"Hi!"]; // self указатель уже на объект
 }
 - (id)text {
     return NSStringFromClass([self class]);
@@ -26,30 +26,15 @@
 
 // метод с одним параметром
 // sayWithString - селектор, (NSString *) - тип принимаемого параметра, string - имя параметра
-- (void)sayWithString:(NSString *)string;
+- (void)sayWithString:(NSString *)string {
+    [self sayWithString:string name:[self description]];
+}
 
 // метод с двумя параметрами
 // name - продолжение селектора
-- (void)sayWithString:(NSString *)string name:(NSString *)name;
-
-@end
-
-// Category интерфейс над APSyntaxCreateObject
-// расширение нашего класса новым методом
-@interface APSyntaxCreateObject (APCategory)
-
-- (void)sayHiFromCategory;
-
-@end
-
-@protocol APSyntaxCreateObject <NSObject>
-- (void)sayHiFromProtocol;
-
-@required
-- (void)requiredSayHiProtocol;
-
-@optional
-- (void)optionalSayHiFromProtocol;
+- (void)sayWithString:(NSString *)string name:(NSString *)name {
+    NSLog(@"%@ %@", string, name);
+}
 
 @end
 

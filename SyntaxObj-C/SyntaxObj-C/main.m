@@ -10,7 +10,6 @@
 #import "APSyntaxCreateObject.h"
 #import "APSyntaxis.h"
 
-
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         APObjectCSyntax();

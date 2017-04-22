@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @class APSyntaxCreateObject;
-@protocol APSyntaxCreateObject;
 
 
 // использование полей {} необходимо избегать, приведены в качестве примера
@@ -55,11 +54,6 @@
 
 // Category интерфейс над APSyntaxCreateObject
 // расширение нашего класса новым методом
-@interface APSyntaxCreateObject (APCategory)
-
-- (void)sayHiFromCategory;
-
-@end
 
 @protocol APSyntaxCreateObject <NSObject>
 - (void)sayHiFromProtocol;
