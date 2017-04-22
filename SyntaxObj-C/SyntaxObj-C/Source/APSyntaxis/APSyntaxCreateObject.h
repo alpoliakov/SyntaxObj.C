@@ -52,17 +52,8 @@
 
 @end
 
-// Category интерфейс над APSyntaxCreateObject
-// расширение нашего класса новым методом
 
-@protocol APSyntaxCreateObject <NSObject>
-- (void)sayHiFromProtocol;
 
-@required
-- (void)requiredSayHiProtocol;
 
-@optional
-- (void)optionalSayHiFromProtocol;
 
-@end
 

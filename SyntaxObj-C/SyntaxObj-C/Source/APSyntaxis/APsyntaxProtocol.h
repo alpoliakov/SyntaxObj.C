@@ -10,4 +10,12 @@
 
 @protocol APsyntaxProtocol <NSObject>
 
+- (void)sayHiFromProtocol;
+
+@required
+- (void)requiredSayHiProtocol;
+
+@optional
+- (void)optionalSayHiFromProtocol;
+
 @end
