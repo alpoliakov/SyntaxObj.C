@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "APSyntaxCreateObject.h"
+#import "APSyntaxCreateObject+APCategory.h"
 
 void APObjectCSyntax(void);
 

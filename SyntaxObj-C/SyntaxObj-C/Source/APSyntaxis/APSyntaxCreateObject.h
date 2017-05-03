@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class APSyntaxCreateObject;
+@protocol APsyntaxProtocol;
 
 
 // использование полей {} необходимо избегать, приведены в качестве примера
@@ -16,7 +17,7 @@
 
 @interface APSyntaxCreateObject : NSObject <NSObject>{
     @public
-    NSObject *_object;
+    NSObject *_publicObject;
     
     @private
     NSObject *_privateObject;
@@ -26,14 +27,15 @@
 }
 
 // @property способ создать и геттер и сеттер (в зависимости от передаваемых параметров)
-@property (nonatomic, retain)   NSObject    *object;
+@property (nonatomic, retain)   id<APsyntaxProtocol> object;
 // это равносильно
-- (void)setObject:(NSObject *)object;
-- (NSObject *)object;
+- (void)setObject:(id<APsyntaxProtocol>)object;
+- (id<APsyntaxProtocol>)object;
 
-@property (atomic, copy)    NSObject    *atomicCopyObject;
-@property (nonatomic, assign, readonly) NSUInteger integerValue;
+@property (atomic, copy)                    NSObject    *atomicCopyObject;
+@property (nonatomic, assign, readonly)     NSUInteger  integerValue;
 @property (nonatomic, assign, readwrite, getter=isReady, setter=setIsReady:)  BOOL    ready;
+@property (nonatomic, readonly)             NSArray     *array;
 
 // + методы самого класса
 + (instancetype)syntax;
@@ -50,19 +52,7 @@
 // name - продолжение селектора
 - (void)sayWithString:(NSString *)string name:(NSString *)name;
 
-@end
-
-// Category интерфейс над APSyntaxCreateObject
-// расширение нашего класса новым методом
-
-@protocol APSyntaxCreateObject <NSObject>
-- (void)sayHiFromProtocol;
-
-@required
-- (void)requiredSayHiProtocol;
-
-@optional
-- (void)optionalSayHiFromProtocol;
+- (void)overLoadedPrint;
+- (void)print;
 
 @end
-
