@@ -12,6 +12,7 @@
 		0644E0601EAA9BEA00C5F33C /* APSyntaxCreateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0644E05F1EAA9BEA00C5F33C /* APSyntaxCreateObject.m */; };
 		0644E0631EAAD9DA00C5F33C /* APSyntaxCreateObject+APCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0644E0621EAAD9DA00C5F33C /* APSyntaxCreateObject+APCategory.m */; };
 		068F621A1EBA16200086E080 /* NSString+APExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 068F62191EBA16200086E080 /* NSString+APExtensions.m */; };
+		06E9F2351EBA484500955745 /* APSubclassCreateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E9F2341EBA484500955745 /* APSubclassCreateObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,8 +41,8 @@
 		068F62191EBA16200086E080 /* NSString+APExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+APExtensions.m"; path = "SyntaxObj-C/Source/APSyntaxis/APRandomString/NSString+APExtensions.m"; sourceTree = SOURCE_ROOT; };
 		068F621D1EBA16EC0086E080 /* APEqualityObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APEqualityObject.h; sourceTree = "<group>"; };
 		068F621E1EBA16EC0086E080 /* APEqualityObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APEqualityObject.m; sourceTree = "<group>"; };
-		068F62211EBA17760086E080 /* APSubclassCreateObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APSubclassCreateObject.h; sourceTree = "<group>"; };
-		068F62221EBA17760086E080 /* APSubclassCreateObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APSubclassCreateObject.m; sourceTree = "<group>"; };
+		06E9F2331EBA484500955745 /* APSubclassCreateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSubclassCreateObject.h; sourceTree = "<group>"; };
+		06E9F2341EBA484500955745 /* APSubclassCreateObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSubclassCreateObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +93,7 @@
 		0644E05A1EAA555500C5F33C /* APSyntaxis */ = {
 			isa = PBXGroup;
 			children = (
-				068F62201EBA17760086E080 /* APSubclassCreateObject */,
+				06E9F2321EBA484500955745 /* APSubclassCreateObject */,
 				068F621C1EBA16EC0086E080 /* APEqualityObject */,
 				068F62171EBA15630086E080 /* APRandomString */,
 				0644E05B1EAA559D00C5F33C /* APSyntaxis.h */,
@@ -126,11 +127,11 @@
 			path = "SyntaxObj-C/Source/APSyntaxis/APEqualityObject";
 			sourceTree = SOURCE_ROOT;
 		};
-		068F62201EBA17760086E080 /* APSubclassCreateObject */ = {
+		06E9F2321EBA484500955745 /* APSubclassCreateObject */ = {
 			isa = PBXGroup;
 			children = (
-				068F62211EBA17760086E080 /* APSubclassCreateObject.h */,
-				068F62221EBA17760086E080 /* APSubclassCreateObject.m */,
+				06E9F2331EBA484500955745 /* APSubclassCreateObject.h */,
+				06E9F2341EBA484500955745 /* APSubclassCreateObject.m */,
 			);
 			name = APSubclassCreateObject;
 			path = "SyntaxObj-C/Source/APSyntaxis/APSubclassCreateObject";
@@ -199,6 +200,7 @@
 				0644E0281EAA433600C5F33C /* main.m in Sources */,
 				0644E05D1EAA559D00C5F33C /* APSyntaxis.m in Sources */,
 				0644E0631EAAD9DA00C5F33C /* APSyntaxCreateObject+APCategory.m in Sources */,
+				06E9F2351EBA484500955745 /* APSubclassCreateObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
