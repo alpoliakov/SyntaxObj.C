@@ -20,15 +20,15 @@ static const NSUInteger kNSStringDefaultRandomStringLength = 30;
 }
 
 + (id)numericAlphabet {
-    return [self alphabetWithUnicodeRange:NSMakeRange('0', '9' - '0')];
+    return [self alphabetWithUnicodeRange:NSMakeRange('0', '9' - '0' + 1)];
 }
 
 + (id)lowercaseletterAlphabet {
-    return [self alphabetWithUnicodeRange:NSMakeRange('a', 'z' - 'a')];
+    return [self alphabetWithUnicodeRange:NSMakeRange('a', 'z' - 'a' + 1)];
 }
 
 + (id)capitalizedLetterAlphabet {
-    return [self alphabetWithUnicodeRange:NSMakeRange('A', 'Z' - 'A')];
+    return [self alphabetWithUnicodeRange:NSMakeRange('A', 'Z' - 'A' + 1)];
 }
 
 + (id)letterAlphabet {
