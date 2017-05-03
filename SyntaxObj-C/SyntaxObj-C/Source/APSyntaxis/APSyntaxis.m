@@ -8,6 +8,8 @@
 
 #import "APSyntaxis.h"
 
+#import <objc/message.h>
+
 #pragma mark -
 #pragma mark Private Declarations
 
