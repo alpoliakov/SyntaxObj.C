@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0644E0281EAA433600C5F33C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0644E0271EAA433600C5F33C /* main.m */; };
+		0644E05D1EAA559D00C5F33C /* APSyntaxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 0644E05C1EAA559D00C5F33C /* APSyntaxis.m */; };
+		0644E0601EAA9BEA00C5F33C /* APSyntaxCreateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0644E05F1EAA9BEA00C5F33C /* APSyntaxCreateObject.m */; };
+		0644E0631EAAD9DA00C5F33C /* APSyntaxCreateObject+APCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0644E0621EAAD9DA00C5F33C /* APSyntaxCreateObject+APCategory.m */; };
+		068F621A1EBA16200086E080 /* NSString+APExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 068F62191EBA16200086E080 /* NSString+APExtensions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0644E0221EAA433600C5F33C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0644E0241EAA433600C5F33C /* SyntaxObj-C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SyntaxObj-C"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0644E0271EAA433600C5F33C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0644E05B1EAA559D00C5F33C /* APSyntaxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APSyntaxis.h; path = "SyntaxObj-C/Source/APSyntaxis/APSyntaxis.h"; sourceTree = SOURCE_ROOT; };
+		0644E05C1EAA559D00C5F33C /* APSyntaxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APSyntaxis.m; path = "SyntaxObj-C/Source/APSyntaxis/APSyntaxis.m"; sourceTree = SOURCE_ROOT; };
+		0644E05E1EAA9BEA00C5F33C /* APSyntaxCreateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APSyntaxCreateObject.h; path = "SyntaxObj-C/Source/APSyntaxis/APSyntaxCreateObject.h"; sourceTree = SOURCE_ROOT; };
+		0644E05F1EAA9BEA00C5F33C /* APSyntaxCreateObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APSyntaxCreateObject.m; path = "SyntaxObj-C/Source/APSyntaxis/APSyntaxCreateObject.m"; sourceTree = SOURCE_ROOT; };
+		0644E0611EAAD9DA00C5F33C /* APSyntaxCreateObject+APCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "APSyntaxCreateObject+APCategory.h"; path = "SyntaxObj-C/Source/APSyntaxis/APSyntaxCreateObject+APCategory.h"; sourceTree = SOURCE_ROOT; };
+		0644E0621EAAD9DA00C5F33C /* APSyntaxCreateObject+APCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "APSyntaxCreateObject+APCategory.m"; path = "SyntaxObj-C/Source/APSyntaxis/APSyntaxCreateObject+APCategory.m"; sourceTree = SOURCE_ROOT; };
+		0644E0641EAADD7300C5F33C /* APsyntaxProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APsyntaxProtocol.h; path = "SyntaxObj-C/Source/APSyntaxis/APsyntaxProtocol.h"; sourceTree = SOURCE_ROOT; };
+		068F62181EBA16200086E080 /* NSString+APExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+APExtensions.h"; path = "SyntaxObj-C/Source/APSyntaxis/APRandomString/NSString+APExtensions.h"; sourceTree = SOURCE_ROOT; };
+		068F62191EBA16200086E080 /* NSString+APExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+APExtensions.m"; path = "SyntaxObj-C/Source/APSyntaxis/APRandomString/NSString+APExtensions.m"; sourceTree = SOURCE_ROOT; };
+		068F621D1EBA16EC0086E080 /* APEqualityObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APEqualityObject.h; sourceTree = "<group>"; };
+		068F621E1EBA16EC0086E080 /* APEqualityObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APEqualityObject.m; sourceTree = "<group>"; };
+		068F62211EBA17760086E080 /* APSubclassCreateObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APSubclassCreateObject.h; sourceTree = "<group>"; };
+		068F62221EBA17760086E080 /* APSubclassCreateObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APSubclassCreateObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0644E0211EAA433600C5F33C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0644E01B1EAA433600C5F33C = {
+			isa = PBXGroup;
+			children = (
+				0644E0261EAA433600C5F33C /* SyntaxObj-C */,
+				0644E0251EAA433600C5F33C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0644E0251EAA433600C5F33C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0644E0241EAA433600C5F33C /* SyntaxObj-C */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0644E0261EAA433600C5F33C /* SyntaxObj-C */ = {
+			isa = PBXGroup;
+			children = (
+				0644E02E1EAA434500C5F33C /* Source */,
+				0644E0271EAA433600C5F33C /* main.m */,
+			);
+			path = "SyntaxObj-C";
+			sourceTree = "<group>";
+		};
+		0644E02E1EAA434500C5F33C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0644E05A1EAA555500C5F33C /* APSyntaxis */,
+			);
+			name = Source;
+			path = Source/Syntax;
+			sourceTree = "<group>";
+		};
+		0644E05A1EAA555500C5F33C /* APSyntaxis */ = {
+			isa = PBXGroup;
+			children = (
+				068F62201EBA17760086E080 /* APSubclassCreateObject */,
+				068F621C1EBA16EC0086E080 /* APEqualityObject */,
+				068F62171EBA15630086E080 /* APRandomString */,
+				0644E05B1EAA559D00C5F33C /* APSyntaxis.h */,
+				0644E05C1EAA559D00C5F33C /* APSyntaxis.m */,
+				0644E05E1EAA9BEA00C5F33C /* APSyntaxCreateObject.h */,
+				0644E05F1EAA9BEA00C5F33C /* APSyntaxCreateObject.m */,
+				0644E0611EAAD9DA00C5F33C /* APSyntaxCreateObject+APCategory.h */,
+				0644E0621EAAD9DA00C5F33C /* APSyntaxCreateObject+APCategory.m */,
+				0644E0641EAADD7300C5F33C /* APsyntaxProtocol.h */,
+			);
+			name = APSyntaxis;
+			path = "SyntaxObj-C/Source/APSyntaxis";
+			sourceTree = "<group>";
+		};
+		068F62171EBA15630086E080 /* APRandomString */ = {
+			isa = PBXGroup;
+			children = (
+				068F62181EBA16200086E080 /* NSString+APExtensions.h */,
+				068F62191EBA16200086E080 /* NSString+APExtensions.m */,
+			);
+			path = APRandomString;
+			sourceTree = "<group>";
+		};
+		068F621C1EBA16EC0086E080 /* APEqualityObject */ = {
+			isa = PBXGroup;
+			children = (
+				068F621D1EBA16EC0086E080 /* APEqualityObject.h */,
+				068F621E1EBA16EC0086E080 /* APEqualityObject.m */,
+			);
+			name = APEqualityObject;
+			path = "SyntaxObj-C/Source/APSyntaxis/APEqualityObject";
+			sourceTree = SOURCE_ROOT;
+		};
+		068F62201EBA17760086E080 /* APSubclassCreateObject */ = {
+			isa = PBXGroup;
+			children = (
+				068F62211EBA17760086E080 /* APSubclassCreateObject.h */,
+				068F62221EBA17760086E080 /* APSubclassCreateObject.m */,
+			);
+			name = APSubclassCreateObject;
+			path = "SyntaxObj-C/Source/APSyntaxis/APSubclassCreateObject";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0644E0231EAA433600C5F33C /* SyntaxObj-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0644E02B1EAA433600C5F33C /* Build configuration list for PBXNativeTarget "SyntaxObj-C" */;
+			buildPhases = (
+				0644E0201EAA433600C5F33C /* Sources */,
+				0644E0211EAA433600C5F33C /* Frameworks */,
+				0644E0221EAA433600C5F33C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SyntaxObj-C";
+			productName = "SyntaxObj-C";
+			productReference = 0644E0241EAA433600C5F33C /* SyntaxObj-C */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0644E01C1EAA433600C5F33C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Aleksandr Poliakov";
+				TargetAttributes = {
+					0644E0231EAA433600C5F33C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VA3GS9K36G;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0644E01F1EAA433600C5F33C /* Build configuration list for PBXProject "SyntaxObj-C" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0644E01B1EAA433600C5F33C;
+			productRefGroup = 0644E0251EAA433600C5F33C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0644E0231EAA433600C5F33C /* SyntaxObj-C */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0644E0201EAA433600C5F33C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0644E0601EAA9BEA00C5F33C /* APSyntaxCreateObject.m in Sources */,
+				068F621A1EBA16200086E080 /* NSString+APExtensions.m in Sources */,
+				0644E0281EAA433600C5F33C /* main.m in Sources */,
+				0644E05D1EAA559D00C5F33C /* APSyntaxis.m in Sources */,
+				0644E0631EAAD9DA00C5F33C /* APSyntaxCreateObject+APCategory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0644E0291EAA433600C5F33C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0644E02A1EAA433600C5F33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0644E02C1EAA433600C5F33C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DEVELOPMENT_TEAM = VA3GS9K36G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0644E02D1EAA433600C5F33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DEVELOPMENT_TEAM = VA3GS9K36G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0644E01F1EAA433600C5F33C /* Build configuration list for PBXProject "SyntaxObj-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0644E0291EAA433600C5F33C /* Debug */,
+				0644E02A1EAA433600C5F33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0644E02B1EAA433600C5F33C /* Build configuration list for PBXNativeTarget "SyntaxObj-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0644E02C1EAA433600C5F33C /* Debug */,
+				0644E02D1EAA433600C5F33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0644E01C1EAA433600C5F33C /* Project object */;
+}
