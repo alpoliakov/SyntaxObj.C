@@ -32,10 +32,10 @@
 - (void)setObject:(id<APsyntaxProtocol>)object;
 - (id<APsyntaxProtocol>)object;
 
-@property (atomic, copy)                    NSObject    *atomicCopyObject;
-@property (nonatomic, assign, readonly)     NSUInteger  integerValue;
+@property (atomic, copy)                                                  NSObject    *atomicCopyObject;
+@property (nonatomic, assign, readonly)                                   NSUInteger  integerValue;
 @property (nonatomic, assign, readwrite, getter=isReady, setter=setIsReady:)  BOOL    ready;
-@property (nonatomic, readonly)             NSArray     *array;
+@property (nonatomic, readonly)                                            NSArray     *array;
 
 // + методы самого класса
 + (instancetype)syntax;
